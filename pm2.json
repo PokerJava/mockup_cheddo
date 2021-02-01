@@ -1,0 +1,17 @@
+{
+    "apps":[
+        {
+            "name":"mockup-api",
+            "script":"./bin/www",
+            "watch": true,
+            "env":{
+                "PORT":3535,
+                "NODE_ENV":"prod",
+                "dev": {
+                    "app_host": "0.0.0.0",
+                    "app_port": "9011"
+                }
+            }
+        }
+    ]
+}
