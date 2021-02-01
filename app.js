@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
-app.use("/api/agent", agentAPIRouter);
+app.use("/obey/api/agent", agentAPIRouter);
 app.use("/session", sessionRouter);
 
 // catch 404 and forward to error handler
